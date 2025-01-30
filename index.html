@@ -111,12 +111,15 @@
          <br><b>           ...I LOVED YOU MORE , IAM LOVING YOU MORE , AND I WILL LOVE YOU MORE--.....</b><br>
          <b>YOU ARE MY BEGINNING</b><BR>
          <b>YOU ARE MY MIDDLE</b><br>
-         <b>YOU ARE MY ENDING</b><br>
+         <b>YOU ARE MY ENDING</b>
+            <audio id="myAudio">
+            <source src="images/song.mp3" type="audio/mpeg">
+        </audio>
          <b>click these 5 buttons one after the other by closing each button after seen</b> </P>
         </div>
     
         <div class="buttons-container">
-            
+            <button onclick="playAudio()" style="top: auto;">Play Song</button>
             <button onclick="showGallery(1)"><b>WE</b></button>
             <button onclick="showGallery(2)"><b>YOUR PROMISES</b></button>
             <button onclick="showGallery(3)"><b>27-july-2024</b></button>
@@ -255,6 +258,9 @@
         function closeGallery(galleryNumber) {
             document.getElementById(`gallery${galleryNumber}`).style.display = 'none';
         }
+        function playAudio() {
+                document.getElementById("myAudio").play();
+            }
     </script>
 </body>
 </html>
