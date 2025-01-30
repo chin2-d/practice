@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('images/we.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 70px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(2, 2, 2);
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(211, 190, 190, 0.7);
+        }
+
+        .buttons-container {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons-container button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgba(231, 15, 15, 0.8);
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons-container button:hover {
+            background-color: #ddd;
+        }
+
+        .gallery {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .gallery button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: rgb(12, 11, 11);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <br><pre>  <br></pre>
+        <div class="text-overlay">GOOD BYE FUTURE WIFE 💔
+        <br>--BANNU--<P style="font-size:medium; white-space: pre;"><b>She is more than just a person; she is a blessing in my life, someone with a 
+            pure Heart.Her care brings light even in my darkest times.She has taught me things 
+            no book ever could—about love,patience, understanding, and the beauty of selflessness.
+        Her presence calms me, like a peaceful melody that eases my restless soul. Made me the most coolest person. 
+        She is not just someone I admire; she is my happiness,my strength, and Everything. I can’t imagine my life 
+         without her. She is not just a part of my story; she is my story. Every moment with her is precious,and being away
+          from her feels unbearable. She is the light that guides me, the love that makes me complete, and the angel who makes my life beautiful.
+        She is the 1st person to encourage me,who cared for me and the only person who would cry for me , not out of pain but out of 
+          Love. You pushed me forward when I hesitated, held me up when I was weak,and made me feel like I could conquer anything. I owe 
+        so much of who I am today to you. And, your cuteness—the way you smile, the way you laugh so loudly without a 
+         care in the world. It’s the most beautiful sound I've ever heard. No matter what it takes, no matter what stands in our way,
+         I need you. At any cost, in any way,I want you by my side,now and forever.</b>
+         <br><b>           ...I LOVED YOU MORE , IAM LOVING YOU MORE , AND I WILL LOVE YOU MORE--.....</b><br>
+         <b>YOU ARE MY BEGINNING</b><BR>
+         <b>YOU ARE MY MIDDLE</b><br>
+         <b>YOU ARE MY ENDING</b><br>
+         <b>click these 5 buttons one after the other by closing each button after seen</b> </P>
+        </div>
+    
+        <div class="buttons-container">
+            
+            <button onclick="showGallery(1)"><b>WE</b></button>
+            <button onclick="showGallery(2)"><b>YOUR PROMISES</b></button>
+            <button onclick="showGallery(3)"><b>27-july-2024</b></button>
+            <button onclick="showGallery(4)"><b>29-july-2024</b></button>
+            <button onclick="showGallery(5)"><b>Last Words</b></button>
+        </div>
+    </div>
+
+    <div id="gallery1" class="gallery">
+    
+        <BR>
+        <p><b>I LOVE YOU BANNU🤩</b> <br> scroll down then come up and close the button at top</p>
+        <img src="images/g1_1.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_2.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_3.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_4.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_5.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_6.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_7.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_8.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_9.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g_10.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_11.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_12.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_13.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g1_14.jpg" alt="Gallery 1 Image 1">
+        <br>
+        <button onclick="closeGallery(1)">Close</button>
+    </div>
+
+    <div id="gallery2" class="gallery">
+        <button onclick="closeGallery(2)">Close</button>
+        <P><B>CHESINA PROMISES ANNI EMAYEE...</B></P>
+        <img src="images/g2_1.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_2.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_3.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_4.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_5.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_6.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_7.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_8.jpg" alt="Gallery 1 Image 1">
+        <img src="images/g2_9.jpg" alt="Gallery 1 Image 1">
+        <button onclick="closeGallery(2)">Close</button>
+    </div>
+
+    <div id="gallery3" class="gallery">
+        <button onclick="closeGallery(3)">Close</button>
+        <p> "__UNEXPECTED__ chiiiii..."</p>
+        <p>These pictures are on "27th july 2024" i.e two days before you met me on your bday. "GREAT"</p> 
+        <p>__YOU CHEATED ON ME 😖😑__</p>
+        <p> __BIGGEST REGRET OF MY LIFE__</p>
+        <img src="images/image_1.jpg" alt="Gallery 4 Image 1">
+        <img src="images/image_5.jpg" alt="Gallery 4 Image 2">
+        <img src="images/image_2.jpg" alt="Gallery 4 Image 3">
+        <img src="images/image_3.jpg" alt="Gallery 4 Image 3">
+        <img src="images/image_4.jpg" alt="Gallery 4 Image 3">
+        <h1> Nannu Aadukovalsina AVASARAM em undhi..!!</h1>
+        <button onclick="closeGallery(3)">Close</button>
+    </div>
+
+    <div id="gallery4" class="gallery">
+        <button onclick="closeGallery(4)">Close</button>
+        <br>
+        <p><b>21st bday 21 kisses</b></p>
+        <img src="images/g4_1.jpg" alt="Gallery 2 Image 1">
+        <img src="images/g4_2.jpg" alt="Gallery 2 Image 1">
+        <img src="images/g4_3.jpg" alt="Gallery 2 Image 1">
+        <img src="images/g4_4.jpg" alt="Gallery 2 Image 1">
+        <img src="images/g4-5.jpg" alt="Gallery 2 Image 1">
+        <img src="images/G4_6.jpg" alt="Gallery 2 Image 1">
+        <button onclick="closeGallery(4)">Close</button>
+    </div>
+    <div id="gallery5" class="gallery">
+        <button onclick="closeGallery(5)">Close</button>
+        <br>
+        <p>I want to be a choice and not some default option. 
+            I'm not going to force you to choose me. If you think you can do better elsewhere,
+            ahh..       move on....
+             I'm not going to hold you back. Life is too short to hang on to someone who isn't sure 
+            that they want to stay. I believe in freedom and... the truth of feelings. So if you must stay, 
+            let it be because your heart tells you that you belong here, not because I ask you to.
+            I want to be a choice and not some default option. 
+             I deserve someone who sees my value, someone who can understand what I bring to
+             their life. I don't want to be with someone who is with me due to the fear of loneliness or
+             out of habit. I want to be with someone who stays because they cannot imagine their
+            life without me.  I want to be with someone that really cares for me and recognise my efforts.
+            I love you and I will never love that much again. You are not the same person I fell in love . 
+            You left me crying , You left me begging you to stay and left me at my worst without looking back.
+            You made me feel so worthless. i love you sooo much and us together is a great memory.
+            But i can't be with who,obviously doesn't want me.
+            Men's do have heart , they do have feelings , they do need respect .
+            Relationships & Marriages are joke to now a days.
+            men in love are underrated and they don't get credit for what they do.
+            A women can't understand a men's love, Instead she ignores it. 
+            Bannu , 
+                    nen naa janmala love chestha  anukole , adrusthamo dhuradruthamo nuv vacchav ,vellav..
+                    nen matladina ekeka ammayivi nuvve naak lokam lo evaru etla untaro teleedhu. 
+                    Crime ,Psycho criminals , sadist movies chhoosthu brathikevanni ,
+                    you changed me completely. Nuv vacchaka anni nee tharuvathe anukunna.
+                    neekosam enno vadhulukunna nuvve kavli ani entho opikatho nuv odhuu anna
+                    vinaledhu. nen ninnu preminchinattu evarni premichale preminchanu .
+                    okari gurinchi manak complete ga telusu ani eppudu anukovadhu , andharitho bet vesina nuv malli osthav ani 
+                    kaani nuv raav ani naak telusu neeku telusu. Really okka kukka ki dakke respect kuda rale naak ee relation lo 
+                   enni sarlu poo anna prathisari digajaari malli malli vacchanu. mee dady aa problem ithe me dady kaalu kuda mokkutha anna kadane...
+                   enno annav , naa athi patiency , athi prema okka advantage laa kukka la padi untad ani 3 yrs adukunnav. 
+                   Asal manushulu intha Fake untara ani teleedhu , 27th ki bday celebrate cheskoni . 29th ki emi jaruganattu vammo...
+                   mosam cheyadam lo oscar lu ivvachu mee ammailaki. dec23rd nundi ippatidhaka daily "i love you" ani nrml msg nearly 5 times per day without missing a day chesa.
+                  naatho unatte andharitho unnava ledha nen aa ekkuva feel ayipoyi bakara ayyana teleyatle.
+                  okka men touch chesadu antte adhi almost marriage , dani chedagoduthunnaru kadha.
+                  vammoo great aa enthaina maintain cheyadam easy kaadh , nashanam chesude easy .
+                  naa life motham spoil chesav 10th lo manesina mandhu ,cigar malla antinchinav. 
+                 <b>I hate you moreeee....</b>
+                evo evo reasons pettukoni maa ayya oopukuntaled , maa amma koduthadhi , 4 years of love is not that easy.
+                okka person ni marchipoyi happy ga undam antha easy aa meeku?
+                enni cheppina waste aa meelantivallaki , ee fake faces thoni em saadhisthav , ippudu naa brathuku nashanam ithe neek emaina ochindha?
+                fake promises , fake love vammoo . 4 years aa 4 years atla etla marchipothavee..?
+                okaa manishi full gaa addict ayye varaku chusi ippudu dady mummy antte starting lo lera mummy dady .
+                maak lera mummy dady, thirigi lepuka ra bidda ani chepthara. caste is not at all a reason maa friend sc vadu hindu ni cheskunnad. they have a baby . 
+                nachakapothe start cheyadhu ,dont ruin others life.
+                Ippatinundi ayina maa ayya maa avva ani reasons cheppaku andhariki. enthoo kopam undhii ippudu kaani anthakanna ekkuva love undhi  
+                neek enni cheppina ardham kaadh enjoy your life but evaritho naala adukoku. nu aa 27th ki evartho vellavo teleedhu kaani adhi chaala thappu nen sec kuda gurthuku raana asal nijanga love ane peru tho emaina cheyachaa?
+                great thalli nuv. maa mummy tho compare chesi thappu chesa. you don't deserve anyone.
+                ,Leave..
+            sorry jagratha ga undu ,andharitho manchiga undu evarini mosam cheyaku
+            nuv manchidhanivi naak telusu kaani endhuku itla chesavo chesthunnavo emo. anyway 
+        jagratha.<br>
+        <b> I loved you more, I am loving you more, I will love you more</b></p>
+
+        <button onclick="closeGallery(5)">Close</button> 
+    </div>
+    <script>
+        function showGallery(galleryNumber) {
+            document.getElementById(`gallery${galleryNumber}`).style.display = 'block';
+        }
+
+        function closeGallery(galleryNumber) {
+            document.getElementById(`gallery${galleryNumber}`).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
